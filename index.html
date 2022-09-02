@@ -26,8 +26,60 @@
         background-blend-mode: darken;
       }
     </style>
+    
+    <script id="hotmart_launcher_script">
+			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
 
+			hot('account','c79bb04b-58b0-392d-bf80-7e77b511f7e6');
+		</script>
+    
   </head>
+  <script>
+
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
+
+ 
+
+function getParams() {
+
+    let t = "",
+
+        e = window.top.location.href,
+
+        r = new URL(e);
+
+    if (null != r) {
+
+        let a = r.searchParams.get("utm_source"),
+
+            n = r.searchParams.get("utm_medium"),
+
+            o = r.searchParams.get("utm_campaign"),
+
+            m = r.searchParams.get("utm_term"),
+
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+
+    }
+
+    return t
+
+}! function() {
+
+    var t = new URLSearchParams(window.location.search);
+
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+
+    })
+
+}();
+
+</script>
   <body>
     
     <header class="py-4">
@@ -38,7 +90,7 @@
             <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
 
             <!-- Headline -->
-            <h3 class="my-4"><b>¡ASEGÚRATE DE QUE TU SONIDO ESTÉ ENCENDIDO!</b></h3>
+            <h3 class="my-4"><b>ESTE VÍDEO SÓLO ESTARÁ DISPONIBLE HOY...</b></h3>
 
             <!-- VSL -->
             <div id="vid_62c6b3c7514ed100098e86d7" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62c6b3c7514ed100098e86d7" src="https://images.converteai.net/7c67ec14-f8d9-457c-bcc0-4cd28f74efec/players/62c6b3c7514ed100098e86d7/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62c6b3c7514ed100098e86d7" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62c6b3c7514ed100098e86d7">var s=document.createElement("script");s.src="https://scripts.converteai.net/7c67ec14-f8d9-457c-bcc0-4cd28f74efec/players/62c6b3c7514ed100098e86d7/player.js",s.async=!0,document.head.appendChild(s);</script>
