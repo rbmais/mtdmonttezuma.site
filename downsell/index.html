@@ -74,60 +74,9 @@
   gtag('config', 'G-R297ED80L1');
 </script>
 	  
-	  <script id="hotmart_launcher_script">
-			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
-			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
-			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
-			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
-
-			hot('account','c79bb04b-58b0-392d-bf80-7e77b511f7e6');
-		</script>
-    
+	 
   </head>
 	
-	<script>
-
-    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
-
- 
-
-function getParams() {
-
-    let t = "",
-
-        e = window.top.location.href,
-
-        r = new URL(e);
-
-    if (null != r) {
-
-        let a = r.searchParams.get("utm_source"),
-
-            n = r.searchParams.get("utm_medium"),
-
-            o = r.searchParams.get("utm_campaign"),
-
-            m = r.searchParams.get("utm_term"),
-
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-
-    }
-
-    return t
-
-}! function() {
-
-    var t = new URLSearchParams(window.location.search);
-
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-
-    })
-
-}();
-
-</script>
 	
   <body>
     <nav class="navbar text-white font-weight-bold bg-danger justify-content-center text-center">
@@ -181,5 +130,59 @@ function getParams() {
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  
+	 <script>
+
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
+
+ 
+
+function getParams() {
+
+    let t = "",
+
+        e = window.top.location.href,
+
+        r = new URL(e);
+
+    if (null != r) {
+
+        let a = r.searchParams.get("utm_source"),
+
+            n = r.searchParams.get("utm_medium"),
+
+            o = r.searchParams.get("utm_campaign"),
+
+            m = r.searchParams.get("utm_term"),
+
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+
+    }
+
+    return t
+
+}! function() {
+
+    var t = new URLSearchParams(window.location.search);
+
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+
+    })
+
+}();
+
+</script>
+	  
+	  <script id="hotmart_launcher_script">
+			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+
+			hot('account','c79bb04b-58b0-392d-bf80-7e77b511f7e6');
+		</script>
+	  
+	</body>
 </html>
